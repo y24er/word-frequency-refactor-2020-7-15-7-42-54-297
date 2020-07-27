@@ -5,16 +5,16 @@ public class WordFrequencyGame {
     private static final String SPACE_PATTERN = "\\s+";
     private static final String NEW_LINE_DELIMITER = "\n";
 
-    public String getResult(String inputStr) {
+    public String getResult(String sentence) {
 
 
-        if (inputStr.split(SPACE_PATTERN).length == 1) {
-            return inputStr + " 1";
+        if (sentence.split(SPACE_PATTERN).length == 1) {
+            return sentence + " 1";
         } else {
 
             try {
 
-                String[] arr = inputStr.split(SPACE_PATTERN);
+                String[] arr = sentence.split(SPACE_PATTERN);
 
                 List<Input> inputList = new ArrayList<>();
                 for (String s : arr) {
